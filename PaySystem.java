@@ -14,5 +14,22 @@ public class PaySystem {
     public void addFunds(int idNo, double amount){
 
     }
+
+    public void chargeLunch(int idNO){
+
+    }
+
+    public void showNegativeBalance(){
+
+    }
+
+    public void TransactionByDay(){
+
+    }
+
+    public int displayStudent(int idNo){
+        return 1;
+        //toString()
+    }
     
 }
