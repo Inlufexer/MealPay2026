@@ -3,5 +3,4 @@ public class Student {
     private int idNo;
     private double balance;
 
-    
 }
