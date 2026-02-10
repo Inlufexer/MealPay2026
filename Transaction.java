@@ -8,4 +8,16 @@ public class Transaction {
         day = myDay;
         amount = myAmount;
     }
+
+    public String getDate(){
+        return month + "/" + day;
+    }
+
+    public double getAmount(){
+        return amount;
+    }
+
+    public String toString(){
+        return "Date: " + getDate() + " Amount: " + getAmount();
+    }
 }
