@@ -17,4 +17,12 @@ public class Student {
         idGen++;
         transactions = new ArrayList<Transaction>();
     }
+    public String toString(){
+        String s = "Name: " + name + " ID: " + idNo + " Balance: $" + balance;
+        s += "Transactions: "; //adding transactions 
+        for (Transaction t: transactions){ // looping through the transactions
+                s += t; // adding the transactions
+            }    
+        return s;
+    } 
 }
