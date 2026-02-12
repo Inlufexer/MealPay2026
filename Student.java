@@ -33,6 +33,11 @@ public class Student {
         return balance;
     }
 
+    //getter for transactions
+    public ArrayList<Transaction> getTransactions(){
+        return transactions; //returns the arraylist of all transactions
+    }
+
     //add money
     public void addFunds(int month, int day, double amount){
         balance = balance + amount; //adding the amount the user wants 
