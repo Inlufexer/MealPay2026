@@ -18,6 +18,21 @@ public class Student {
         transactions = new ArrayList<Transaction>();
     }
 
+    //getter for name
+    public String getName(){
+        return name;
+    }
+
+    //getter for idNo
+    public int getIdNo(){
+        return idNo;
+    }
+
+    //getter for balance
+    public double getBalance(){
+        return balance;
+    }
+
     //add money
     public void addFunds(int month, int day, double amount){
         balance = balance + amount; //adding the amount the user wants 
