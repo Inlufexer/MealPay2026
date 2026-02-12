@@ -38,13 +38,21 @@ public class PaySystem {
         }
     }
 
-    public void TransactionByDay(){
+    public void TransactionByDay(int month, int day){
+        for (int i = 0; i < students.size(); i++){
+            Student s = students.get(i);
+        }
 
     }
 
-    public int displayStudent(int idNo){
-        return 1;
-        //toString()
+    public void displayStudent(int idNo){
+        for (int i = 0; i < students.size(); i++){
+            Student s = students.get(i);
+            if (s.getIdNo() == idNo){
+                s.toString(); //using the toString()
+
+            }
+        }
+        System.out.println("Student ID number not found."); //if s.getIdNo does not match with the searching id there is no profile
     }
-    
 }
