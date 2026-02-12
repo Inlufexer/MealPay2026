@@ -30,7 +30,12 @@ public class PaySystem {
     }
 
     public void showNegativeBalance(){
-
+        for (int i = 0; i < students.size(); i++){
+            Student s = students.get(i);
+                if (s.getBalance() < 0){ // if balance is less than 0 it prints the student
+                    System.out.println(s);
+                }
+        }
     }
 
     public void TransactionByDay(){
