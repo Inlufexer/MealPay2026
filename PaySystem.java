@@ -1,16 +1,16 @@
+import java.util.ArrayList;
+
 public class PaySystem {
 
     public static void main(String[] args){
-        ArrayList<String> student = new ArrayList<String>();
+        ArrayList<Student> students = new ArrayList<Student>();
     }
         
     public void addStudent(String name){
-
-        
-
+        students.add(new Student(name));
     }
 
-    public void addFunds(int idNo, double amount){
+    public void addFunds(int idNo, double amount, String date) {
 
     }
 
