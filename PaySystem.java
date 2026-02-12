@@ -18,9 +18,11 @@ public class PaySystem {
             if (s.getIdNo() == idNo) { // if id searching for is in the students list
                 s.addFunds(month, day, amount); // new transaction
             }
+            else{
+                System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
+            }                                                // is no profile
         }
-        System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
-                                                            // is no profile
+            
 
     }
 
