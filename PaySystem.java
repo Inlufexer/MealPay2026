@@ -19,7 +19,13 @@ public class PaySystem {
 
     }
 
-    public void chargeLunch(int idNO){
+    public void chargeLunch(int idNo, int month, int day){
+        for (int i = 0; i < students.size(); i++){
+            Student s = students.get(i); //i value where i is looping through
+            if (s.getIdNo() == idNo){
+                s.chargeLunch(month, day);  //uses Students charge lunch method to subtract $7
+            }
+        }
 
     }
 
