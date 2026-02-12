@@ -9,10 +9,5 @@ public class Tester {
         paySystem.addStudent("B");
         paySystem.addStudent("C");
         paySystem.addStudent("D");
-
-        paySystem.displayStudentID(1);
-        paySystem.displayStudentID(2);
-        paySystem.displayStudentID(3);
-        paySystem.displayStudentID(4);
     }
 }
