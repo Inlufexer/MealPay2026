@@ -18,11 +18,13 @@ public class Student {
         transactions = new ArrayList<Transaction>();
     }
 
+    //add money
     public void addFunds(int month, int day, double amount){
         balance = balance + amount; //adding the amount the user wants 
         transactions.add(new Transaction(month, day, amount)); 
     }
 
+    //charge Lunch 
     public void chargeLunch (int month, int day){
         balance = balance - 7.0; //lunch costs seven dollars
         transactions.add(new Transaction(month, day, -7.0));
