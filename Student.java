@@ -5,9 +5,8 @@ public class Student {
     private String name;
     private int idNo;
     private double balance;
-
     private static int idGen = 1;
-    
+
     private ArrayList<Transaction> transactions;
 
     // Creating the student
@@ -18,6 +17,17 @@ public class Student {
         idGen++;
         transactions = new ArrayList<Transaction>();
     }
+
+    public void addFunds(int month, int day, double amount){
+        balance = balance + amount; //adding the amount the user wants 
+        transactions.add(new Transaction(month, day, amount)); 
+    }
+
+    public void chargeLunch (int month, int day){
+        balance = balance - 7.0; //lunch costs seven dollars
+        transactions.add(new Transaction(month, day, -7.0));
+    }
+
     public String toString(){
         String s = "Name: " + name + " ID: " + idNo + " Balance: $" + balance;
         s += "Transactions: "; //adding transactions 
