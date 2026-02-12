@@ -3,21 +3,21 @@ public class Transaction {
     private int day;
     private double amount;
 
-    public Transaction(int myMonth, int myDay, double myAmount){
+    public Transaction(int myMonth, int myDay, double myAmount) {
         month = myMonth;
         day = myDay;
         amount = myAmount;
     }
 
-    public String getDate(){
+    public String getDate() {
         return month + "/" + day;
     }
 
-    public double getAmount(){
+    public double getAmount() {
         return amount;
     }
 
-    public String toString(){
-        return "Date: " + getDate() + " Amount: " + getAmount();
+    public String toString() {
+        return "Date: " + getDate() + " Amount: " + getAmount() + " ";
     }
 }
