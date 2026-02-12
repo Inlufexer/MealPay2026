@@ -33,14 +33,25 @@ public class PaySystem {
         for (int i = 0; i < students.size(); i++){
             Student s = students.get(i);
                 if (s.getBalance() < 0){ // if balance is less than 0 it prints the student
-                    System.out.println(s);
+                    s.toString();
                 }
         }
     }
 
     public void TransactionByDay(int month, int day){
         for (int i = 0; i < students.size(); i++){
-            Student s = students.get(i);
+            Student s = students.get(i); //keeps track of what student we are on/goes through students
+
+            ArrayList<Transaction> thatDay = s.getTransactions(); //goes through that students transactions
+
+            for (int j = 0; j < thatDay.size(); j++){
+                Transaction t = thatDay.get(j);
+
+                if (t.getDate().equals((month + "/" + day))){ //if the dates are the same
+                    System.out.println(t + " by " + s.getIdNo());
+                }
+            }
+            System.out.println("There were no transactions on " + month + "/" + day); //if the date and month don't add up
         }
 
     }
