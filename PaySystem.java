@@ -67,5 +67,12 @@ public class PaySystem {
         System.out.println("Student ID number not found."); //if s.getIdNo does not match with the searching id there is no profile
     }
 
-    public String
+    public String toString(){
+        String toString = "";
+        for (int i = 0; i < students.size(); i++){
+            toString += students.get(i).toString();
+            toString += "\n";
+            }
+        return toString;
+    }
 }
