@@ -33,7 +33,7 @@ public class PaySystem {
         for (int i = 0; i < students.size(); i++){
             Student s = students.get(i);
                 if (s.getBalance() < 0){ // if balance is less than 0 it prints the student
-                    s.toString();
+                    System.out.println(s.toString());
                 }
         }
     }
@@ -66,4 +66,6 @@ public class PaySystem {
         }
         System.out.println("Student ID number not found."); //if s.getIdNo does not match with the searching id there is no profile
     }
+
+    public String
 }
