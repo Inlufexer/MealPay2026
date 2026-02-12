@@ -13,5 +13,27 @@ public class Tester {
         paySystem.addStudent("D");
 
         System.out.println(paySystem.toString());
+
+        System.out.println("Adding some funds and making some purchases...");
+        paySystem.addFunds(1,2, 1, 7);
+        paySystem.addFunds(2,2, 2, 14);
+        paySystem.addFunds(3,2, 3, 21);
+        paySystem.addFunds(4,2, 4, 28);
+
+        // charging lunch
+        paySystem.chargeLunch(1, 2, 1);
+        paySystem.chargeLunch(1, 2, 2);
+
+        paySystem.chargeLunch(2, 2, 2);
+        paySystem.chargeLunch(2, 2, 3);
+
+        paySystem.chargeLunch(3, 2, 3);
+        paySystem.chargeLunch(3, 2, 4);
+    
+        paySystem.chargeLunch(4, 2, 5);
+        paySystem.chargeLunch(4, 2, 6);
+
+        System.out.println(paySystem.toString());
+
     }
 }
