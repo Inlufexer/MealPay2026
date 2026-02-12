@@ -5,7 +5,7 @@ public class PaySystem {
     private ArrayList<Student> students;
         
     public void addStudent(String name){
-        students.add(new Student(name));
+        students.add(new Student(name)); //create a new student in student class
     }
 
     public void addFunds(int idNo, int month, int day, double amount) {
