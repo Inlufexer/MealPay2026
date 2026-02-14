@@ -49,7 +49,7 @@ public class PaySystem {
         }
     }
 
-    public void TransactionByDay(int month, int day) {
+    public void transactionByDay(int month, int day) {
         boolean idFound = false;
         for (int i = 0; i < students.size(); i++) {
             Student s = students.get(i); // keeps track of what student we are on/goes through students

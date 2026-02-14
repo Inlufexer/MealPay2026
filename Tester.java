@@ -46,7 +46,7 @@ public class Tester {
 
         System.out.println();
         System.out.println("Displaying all transactions on 2/4...");
-        paySystem.TransactionByDay(2, 4);
+        paySystem.transactionByDay(2, 4);
         
 
     }
