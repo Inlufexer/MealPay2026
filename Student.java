@@ -51,7 +51,7 @@ public class Student {
     }
 
     public String toString() {
-        String s = "Name: " + name + " ID: " + idNo + " Balance: $" + balance;
+        String s = "Student: " + name + " ID: " + idNo + " Balance: $" + balance;
         s += " Transactions: "; // adding transactions
         for (Transaction t : transactions) { // looping through the transactions
             s += t; // adding the transactions
