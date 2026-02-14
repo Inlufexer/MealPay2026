@@ -6,12 +6,13 @@ public class Tester {
         System.out.println("Adding students to the program...\n");
         
         PaySystem paySystem = new PaySystem();
-        
+
         paySystem.addStudent("A");
         paySystem.addStudent("B");
         paySystem.addStudent("C");
         paySystem.addStudent("D");
 
+        System.out.println("Displaying students...");
         System.out.println(paySystem.toString());
 
         System.out.println("Adding some funds and making some purchases...");
