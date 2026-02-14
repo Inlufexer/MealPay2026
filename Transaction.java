@@ -10,7 +10,7 @@ public class Transaction {
     }
 
     public String getDate() {
-        return month + "/" + day;
+        return ( month + "/" + day);
     }
 
     public double getAmount() {
@@ -18,6 +18,6 @@ public class Transaction {
     }
 
     public String toString() {
-        return "Date: " + getDate() + " Amount: " + getAmount() + " ";
+        return "(" + getDate() + ", $" + getAmount() + ") ";
     }
 }
