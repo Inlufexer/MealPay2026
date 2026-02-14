@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Tester {
     public static void main(String[] args){
-        System.out.println("Welcome to the MealPay program!\r\n" + //
-                        "\r\n" + //
-                        "Adding students to the program...");
+        System.out.println("Welcome to the MealPay program!\n");
+        System.out.println("Adding students to the program...\n");
         
         PaySystem paySystem = new PaySystem();
+        
         paySystem.addStudent("A");
         paySystem.addStudent("B");
         paySystem.addStudent("C");
@@ -36,13 +36,17 @@ public class Tester {
 
         System.out.println(paySystem.toString());
         System.out.println("Displaying just those with negative balances...");
+        paySystem.showNegativeBalance();
 
         System.out.println();
         System.out.println("Looking up student with ID number of 2:");
+        paySystem.displayStudentID(2);
 
 
         System.out.println();
         System.out.println("Displaying all transactions on 2/4...");
+        paySystem.TransactionByDay(2, 4);
+        
 
     }
 }
