@@ -13,27 +13,31 @@ public class PaySystem {
     }
 
     public void addFunds(int idNo, int month, int day, double amount) {
+        boolean idFound = false;
         for (int i = 0; i < students.size(); i++) {
             Student s = students.get(i); // i value where i is looping through
             if (s.getIdNo() == idNo) { // if id searching for is in the students list
                 s.addFunds(month, day, amount); // new transaction
+                idFound = true;
             }
-            else{
-                System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
-            }                                                // is no profile
         }
-            
-
-    }
+            if (idFound == false){
+                System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
+            }
+        }
 
     public void chargeLunch(int idNo, int month, int day) {
+        boolean idFound = false;
         for (int i = 0; i < students.size(); i++) {
             Student s = students.get(i); // i value where i is looping through
             if (s.getIdNo() == idNo) {
                 s.chargeLunch(month, day); // uses Students charge lunch method to subtract $7
+                idFound = true;
             }
         }
-
+         if (idFound == false){
+                System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
+            }
     }
 
     public void showNegativeBalance() {
@@ -69,7 +73,6 @@ public class PaySystem {
             Student s = students.get(i);
             if (s.getIdNo() == idNo) {
                 s.toString(); // using the toString()
-
             }
         }
         System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
