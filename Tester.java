@@ -21,6 +21,7 @@ public class Tester {
         paySystem.addFunds(4,2, 4, 28);
 
         // charging lunch
+        System.out.println();
         paySystem.chargeLunch(1, 2, 1);
         paySystem.chargeLunch(1, 2, 2);
 
@@ -34,6 +35,14 @@ public class Tester {
         paySystem.chargeLunch(4, 2, 6);
 
         System.out.println(paySystem.toString());
+        System.out.println("Displaying just those with negative balances...");
+
+        System.out.println();
+        System.out.println("Looking up student with ID number of 2:");
+
+
+        System.out.println();
+        System.out.println("Displaying all transactions on 2/4...");
 
     }
 }
