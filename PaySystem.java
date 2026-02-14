@@ -50,6 +50,7 @@ public class PaySystem {
     }
 
     public void TransactionByDay(int month, int day) {
+        boolean idFound = false;
         for (int i = 0; i < students.size(); i++) {
             Student s = students.get(i); // keeps track of what student we are on/goes through students
 
@@ -59,24 +60,31 @@ public class PaySystem {
                 Transaction t = thatDay.get(j);
 
                 if (t.getDate().equals((month + "/" + day))) { // if the dates are the same
-                    System.out.println(t + " by " + s.getIdNo());
+                    System.out.println(t + "by " + s.getName() + " ID: " + s.getIdNo());
+                    idFound = true;
                 }
             }
-            System.out.println("There were no transactions on " + month + "/" + day); // if the date and month don't add
-                                                                                      // up
         }
+
+        if (idFound == false){
+            System.out.println("There were no transactions on " + month + "/" + day); // if the date and month don't add
+            }
 
     }
 
     public void displayStudentID(int idNo) {
+        boolean idFound = false;
         for (int i = 0; i < students.size(); i++) {
             Student s = students.get(i);
             if (s.getIdNo() == idNo) {
-                s.toString(); // using the toString()
+                System.out.println(s); // using the toString()
+                idFound = true;
             }
         }
+
+        if (idFound == false){
         System.out.println("Student ID number not found."); // if s.getIdNo does not match with the searching id there
-                                                            // is no profile
+        }  
     }
 
     public String toString(){
